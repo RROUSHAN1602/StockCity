@@ -13,4 +13,3 @@ python-dotenv
 tensorflow
 backtesting
 prophet
-pycryptodome  
