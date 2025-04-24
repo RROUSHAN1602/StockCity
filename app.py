@@ -122,14 +122,15 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 
+
 # --- FETCH LIVE PRICE ---
 try:
     token = symbol_map.get(stock_choice)
     live_data = obj.ltpData(exchange="NSE", tradingsymbol=stock_choice, symboltoken=token)
     ltp = round(live_data["data"]["ltp"], 2)
     st.metric(label=f"📈 Live Price of {stock_choice}", value=f"₹ {ltp}")
-except:
-    st.warning("⚠️ Could not fetch live price.")
+except Exception as e:
+    st.warning(f"⚠️ Could not fetch live price. Reason: {e}")
 
 # --- PAGE: Home ---
 if page == "🏠 Home":
