@@ -13,3 +13,4 @@ python-dotenv
 tensorflow
 backtesting
 prophet
+logzero     
