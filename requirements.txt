@@ -10,7 +10,8 @@ numpy==1.24.4
 requests==2.31.0
 beautifulsoup4==4.12.3
 python-dotenv==1.0.1
-tensorflow==2.15.0              # ✅ Avoid 2.16.x bugs in pywrap_ml_dtypes
+tensorflow==2.15.0
 backtesting==0.3.3
-prophet==1.1.5                   # ✅ Compatible with pandas 2.2
+prophet==1.1.5
 logzero==1.7.0
+streamlit-lottie==0.0.5       # ✅ THIS LINE fixes your latest error
