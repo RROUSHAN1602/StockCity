@@ -1,16 +1,16 @@
-streamlit
-yfinance
+streamlit==1.32.2
+yfinance==0.2.36
 smartapi-python==1.5.5
-pyotp
-pandas
-plotly
-ta
-scikit-learn
-numpy
-requests
-beautifulsoup4
-python-dotenv
-tensorflow
-backtesting
-prophet
-logzero     
+pyotp==2.8.0
+pandas==2.2.2
+plotly==5.21.0
+ta==0.11.0
+scikit-learn==1.4.2
+numpy==1.24.4
+requests==2.31.0
+beautifulsoup4==4.12.3
+python-dotenv==1.0.1
+tensorflow==2.15.0              # ✅ Avoid 2.16.x bugs in pywrap_ml_dtypes
+backtesting==0.3.3
+prophet==1.1.5                   # ✅ Compatible with pandas 2.2
+logzero==1.7.0
